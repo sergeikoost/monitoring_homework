@@ -1,2 +1,1 @@
-# monitoring_homework
-Repository for netology monitoring homeworks
+Repository for netology monitoring homeworks.
