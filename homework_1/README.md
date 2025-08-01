@@ -122,3 +122,24 @@ Pull — лучше там, где важны прозрачность, безо
 | **Гибридные**| Zabbix, VictoriaMetrics |
 
 ---
+
+
+## 7. Склонируйте себе репозиторий и запустите TICK-стэк, используя технологии docker и docker-compose.
+В виде решения на это упражнение приведите скриншот веб-интерфейса ПО chronograf (http://localhost:8888).
+
+P.S.: если при запуске некоторые контейнеры будут падать с ошибкой - проставьте им режим Z, например ./data:/var/lib:Z
+
+
+
+<img width="1857" height="944" alt="ci cd_homework1 11" src="https://github.com/user-attachments/assets/679f60a2-6e53-42c1-97ec-ef618ba5489f" />
+
+## 8. Перейдите в веб-интерфейс Chronograf (http://localhost:8888) и откройте вкладку Data explorer. Нажмите на кнопку Add a query
+Изучите вывод интерфейса и выберите БД telegraf.autogen
+В measurments выберите cpu->host->telegraf-getting-started, а в fields выберите usage_system. Внизу появится график утилизации cpu.
+Вверху вы можете увидеть запрос, аналогичный SQL-синтаксису. Поэкспериментируйте с запросом, попробуйте изменить группировку и интервал наблюдений.
+Для выполнения задания приведите скриншот с отображением метрик утилизации cpu из веб-интерфейса.
+
+
+<img width="1858" height="801" alt="ci cd_homework1 12" src="https://github.com/user-attachments/assets/0980b47a-d380-4357-b287-2f0b62238198" />
+
+
