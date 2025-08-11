@@ -51,9 +51,8 @@ alerting:
 
 ```
 
-# /etc/prometheus/alerts.yml
 groups:
-  - name: example
+  - name: instance-down
     rules:
       - alert: InstanceDown
         expr: up == 0
@@ -61,9 +60,17 @@ groups:
         labels:
           severity: critical
         annotations:
-          summary: "Instance {{ $labels.instance }} is down"
-          description: "{{ $labels.job }} on {{ $labels.instance }} has been down for more than 30 seconds."
-```
+          summary: "VM {{ $labels.instance }} unreachable"
+
+  - name: high-cpu-load
+    rules:
+      - alert: HighCpuLoad
+        expr: 100 - (avg by(instance) (rate(node_cpu_seconds_total{mode="idle"}[5m])) * 100) > 80
+        for: 2m
+        labels:
+          severity: warning
+        annotations:
+          summary: "High CPU utilization on {{ $labels.instance }}"
 
 prometheus.service:
 
