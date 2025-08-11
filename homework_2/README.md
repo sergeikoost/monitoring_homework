@@ -40,6 +40,11 @@ scrape_configs:
   - job_name: 'node-exporter-remote'
     static_configs:
       - targets: ['84.252.136.35:9100'] 
+alerting:
+  alertmanagers:
+    - static_configs:
+        - targets: ['localhost:9093']
+
 ```
 
 Конфиг alerts.yml:
