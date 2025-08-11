@@ -71,6 +71,11 @@ groups:
           severity: warning
         annotations:
           summary: "High CPU utilization on {{ $labels.instance }}"
+```
+
+
+<img width="1916" height="451" alt="monitor_homework1 3" src="https://github.com/user-attachments/assets/721fbe91-218c-4fe3-8c6c-057c32ef31f7" />
+
 
 prometheus.service:
 
