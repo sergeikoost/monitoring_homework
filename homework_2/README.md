@@ -151,4 +151,8 @@ receivers:
 <img width="1683" height="951" alt="monitor_homework1 2" src="https://github.com/user-attachments/assets/6f23962f-5305-4537-a6ef-2128d12481cd" />
 
 
+#### Уведомления в чат-бота тоже приходят корректно:
 
+<img width="584" height="211" alt="monitor_homework1 4" src="https://github.com/user-attachments/assets/3139fce4-8ff3-4a2b-8e53-faa4c6c63401" />
+
+<img width="1907" height="535" alt="monitor_homework1 5" src="https://github.com/user-attachments/assets/2b6cbf84-89ad-4ab5-9e69-231be01e60ef" />
