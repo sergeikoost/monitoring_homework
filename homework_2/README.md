@@ -124,8 +124,8 @@ receivers:
   - name: 'telegram'
     telegram_configs:
       - api_url: 'https://api.telegram.org'
-        bot_token: '8461892494:AAHKYdxB--pibMn3T6tUAu1POmZPmymSRwQ'
-        chat_id: 106980186
+        bot_token: 'xxxxxx'
+        chat_id: xxxxxx
         send_resolved: true
         message: |
           {{ template "telegram.default.message" . }}
