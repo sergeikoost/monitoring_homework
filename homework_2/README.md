@@ -156,3 +156,39 @@ receivers:
 <img width="584" height="211" alt="monitor_homework1 4" src="https://github.com/user-attachments/assets/3139fce4-8ff3-4a2b-8e53-faa4c6c63401" />
 
 <img width="1907" height="535" alt="monitor_homework1 5" src="https://github.com/user-attachments/assets/2b6cbf84-89ad-4ab5-9e69-231be01e60ef" />
+
+
+### Задание 2
+
+Создайте Dashboard и в ней создайте Panels:
+
+- утилизация CPU для nodeexporter (в процентах, 100-idle);
+- CPULA 1/5/15;
+- количество свободной оперативной памяти;
+- количество места на файловой системе.
+
+Для решения этого задания приведите promql-запросы для выдачи этих метрик, а также скриншот получившейся Dashboard.
+
+
+**Ответ.**
+
+- Утилизация CPU для nodeexporter в %:
+```
+100 - (avg by(instance) (rate(node_cpu_seconds_total{mode="idle"}[5m])) * 100)
+```
+- CPU Load Average 1/5/15:
+```
+node_load1{instance="84.252.136.35:9100"}
+node_load5{instance="84.252.136.35:9100"}
+node_load15{instance="84.252.136.35:9100"}
+```
+- Количество свободной ОЗУ:
+```
+node_memory_MemAvailable_bytes{instance="84.252.136.35:9100"} / 1024 / 1024
+```
+- Количество места на файловой системе в %:
+```
+100 - ((node_filesystem_avail_bytes{instance="ваш_хост:9100", fstype!~"tmpfs|squashfs|autofs"} * 100) / node_filesystem_size_bytes{instance="ваш_хост:9100", fstype!~"tmpfs|squashfs|autofs"})```
+```
+
+<img width="1678" height="802" alt="monitor_homework1 6" src="https://github.com/user-attachments/assets/fa845992-88a4-4673-8f12-9348e9a4795a" />
