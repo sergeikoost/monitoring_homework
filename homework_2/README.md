@@ -192,3 +192,19 @@ node_memory_MemAvailable_bytes{instance="84.252.136.35:9100"} / 1024 / 1024
 ```
 
 <img width="1678" height="802" alt="monitor_homework1 6" src="https://github.com/user-attachments/assets/fa845992-88a4-4673-8f12-9348e9a4795a" />
+
+
+## Задание 3
+
+1. Создайте для каждой Dashboard подходящее правило alert — можно обратиться к первой лекции в блоке «Мониторинг».
+2. В качестве решения задания приведите скриншот вашей итоговой Dashboard.
+
+**Ответ.**
+<img width="1605" height="888" alt="monitor_homework1 7" src="https://github.com/user-attachments/assets/41e33409-de88-4955-96d3-da192912fbd6" />
+
+
+## Задание 4
+
+1. Сохраните ваш Dashboard.Для этого перейдите в настройки Dashboard, выберите в боковом меню «JSON MODEL». Далее скопируйте отображаемое json-содержимое в отдельный файл и сохраните его.
+1. В качестве решения задания приведите листинг этого файла.
+
