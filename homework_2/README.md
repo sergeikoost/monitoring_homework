@@ -208,3 +208,4 @@ node_memory_MemAvailable_bytes{instance="84.252.136.35:9100"} / 1024 / 1024
 1. Сохраните ваш Dashboard.Для этого перейдите в настройки Dashboard, выберите в боковом меню «JSON MODEL». Далее скопируйте отображаемое json-содержимое в отдельный файл и сохраните его.
 1. В качестве решения задания приведите листинг этого файла.
 
+<img width="955" height="868" alt="monitor_homework1 8" src="https://github.com/user-attachments/assets/7b6cda38-0bb2-4ed9-a4fe-832b65c4e0d6" />
